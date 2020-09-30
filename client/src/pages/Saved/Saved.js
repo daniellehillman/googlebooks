@@ -8,7 +8,7 @@ const Saved = () => {
   })
 
   savedState.handleDeleteBook = id => {
-    API.deleteSaved(id)
+    API.deleteBook(id)
       .then(() => {
         let saved = savedState.saved.filter(saved=> saved._id !== id)
         setSavedState({ ...savedState, saved })
