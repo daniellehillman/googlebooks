@@ -9,17 +9,18 @@ const Book = props => {
     return (
         <div>
     <Card>
-  <CardImg className="image" src={props.book.image} alt="Card image cap" />
+  <CardImg className="image" src={props.book.image} alt="Card Image Caption" />
   <CardBody>
     <CardTitle>{props.book.title}</CardTitle>
-    <CardSubtitle>Written by: {props.book.authors}</CardSubtitle>
+    <CardSubtitle>Book Written by: {props.book.authors}</CardSubtitle>
     <CardText>{props.book.description}</CardText>
     <Button 
 
     onClick={() => props.handleSaveBook(props.book.googleId)}>
     Save
     </Button>
-    <br></br>
+
+    
     <br></br>
     <Button href={props.book.link}>Google Books Link</Button>
   </CardBody>

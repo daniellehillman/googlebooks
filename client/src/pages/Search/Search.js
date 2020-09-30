@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography'
 const Search = () => {
 
     const [bookState, setBookState] = useState({
-        search: '', // must be the same as input's name attribute 
+        search: '', 
         book: []
       })
 

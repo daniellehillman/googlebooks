@@ -1,13 +1,13 @@
 const { model, Schema } = require('mongoose')
 
-const Saved = new Schema({
+const Book = new Schema({
 
   title: String,
-  authors: String,
+  authors: [String] ,
   description: String,
   image: String,
   link: String,
-  apiID: String
+  // apiID: String
 })
 
-module.exports = model('Saved', Saved)
+module.exports = model('Book', Book)
